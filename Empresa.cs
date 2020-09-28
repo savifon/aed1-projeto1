@@ -43,11 +43,11 @@ class Empresa {
 		if (String.IsNullOrEmpty(d))
 			Console.WriteLine("Os dados informados são nulos ou vazios.");
 		else
-			Servicos = sd;
+			Dados = sd;
 	}
 
-	public string GetServicos() {
-		return Servicos;
+	public string GetDados() {
+		return Dados;
 	}
 
 }
