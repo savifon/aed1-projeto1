@@ -14,12 +14,9 @@ class MainClass {
 		MinhaEmpresa.SetServicos(Console.ReadLine());
 
 		Termo MeuTermo = new Termo();
-		MeuTermo.SetTexto(MinhaEmpresa.GetDados(), MinhaEmpresa.GetServicos());
+		MeuTermo.SetTexto(MinhaEmpresa.GetDados(), MinhaEmpresa.GetServicos(), MinhaEmpresa.GetRazaoSocial(), MinhaEmpresa.GetCnpj());
+		Console.WriteLine("\n\n**COPIE E COLE O TERMO PARA UTILIZAÇÃO:**\n\n");
 		Console.WriteLine(MeuTermo.GetTexto());
-
-		/*Console.WriteLine(MinhaEmpresa.GetRazaoSocial());
-		Console.WriteLine(MinhaEmpresa.GetCnpj());
-		Console.WriteLine(MinhaEmpresa.GetDados());
-		Console.WriteLine(MinhaEmpresa.GetServicos());*/
+		Console.WriteLine("\n\n**COPIE E COLE O TERMO PARA UTILIZAÇÃO:**\n\n");
   }
 }
