@@ -13,9 +13,13 @@ class MainClass {
 		Console.Write("Digite os serviços em que esses dados serão utilizados (de uma só vez, separados por vírgula): ");
 		MinhaEmpresa.SetServicos(Console.ReadLine());
 
-		Console.WriteLine(MinhaEmpresa.GetRazaoSocial());
+		Termo MeuTermo = new Termo();
+		MeuTermo.SetTexto(MinhaEmpresa.GetDados(), MinhaEmpresa.GetServicos());
+		Console.WriteLine(MeuTermo.GetTexto());
+
+		/*Console.WriteLine(MinhaEmpresa.GetRazaoSocial());
 		Console.WriteLine(MinhaEmpresa.GetCnpj());
 		Console.WriteLine(MinhaEmpresa.GetDados());
-		Console.WriteLine(MinhaEmpresa.GetServicos());
+		Console.WriteLine(MinhaEmpresa.GetServicos());*/
   }
 }
