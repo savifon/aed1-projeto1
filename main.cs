@@ -15,8 +15,8 @@ class MainClass {
 
 		Termo MeuTermo = new Termo();
 		MeuTermo.SetTexto(MinhaEmpresa.GetDados(), MinhaEmpresa.GetServicos(), MinhaEmpresa.GetRazaoSocial(), MinhaEmpresa.GetCnpj());
-		Console.WriteLine("\n\n**COPIE E COLE O TERMO PARA UTILIZAÇÃO:**\n\n");
+		Console.WriteLine("\n\n**COPIE E COLE O TERMO PARA UTILIZAÇÃO:**\n\n---------------------------------------------");
 		Console.WriteLine(MeuTermo.GetTexto());
-		Console.WriteLine("\n\n**COPIE E COLE O TERMO PARA UTILIZAÇÃO:**\n\n");
+		Console.WriteLine("---------------------------------------------\n\n**COPIE E COLE O TERMO PARA UTILIZAÇÃO:**\n\n");
   }
 }
